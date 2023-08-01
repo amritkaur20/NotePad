@@ -2,7 +2,7 @@ import React from 'react'
 import { Note } from './Note'
 import { Addnote } from './Addnote'
 
-export const NoteList = ({notes , handleAddNote , handleDeleteNote}) => {
+const NoteList = ({notes , handleAddNote , handleDeleteNote}) => {
   return (
     <div className='list'>
   {notes.map((note)=> 
@@ -11,3 +11,4 @@ export const NoteList = ({notes , handleAddNote , handleDeleteNote}) => {
     </div>
   )
 }
+export default NoteList;
